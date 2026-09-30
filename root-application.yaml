@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: "https://github.com/MarekQdlaty/argoCD.git"
     targetRevision: main
-    path: "ArgoCD/environments/dev"
+    path: "environments/dev"
   destination:
     server: "https://kubernetes.default.svc"
     namespace: shop-dev
