@@ -14,4 +14,3 @@ spec:
         command: ["sh", "-c", "echo 'Running PreSync DB Schema Migration...' && sleep 5"]
       restartPolicy: Never
   backoffLimit: 1
-EOF
