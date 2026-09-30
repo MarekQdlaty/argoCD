@@ -5,14 +5,14 @@ metadata:
   namespace: argocd
 spec:
   generators:
-  - list:
-      elements:
-      - env: dev
-        ns: shop-dev
-      - env: test
-        ns: shop-test
-      - env: prod
-        ns: shop-prod
+    - list:
+        elements:
+          - env: dev
+            ns: shop-dev
+          - env: test
+            ns: shop-test
+          - env: prod
+            ns: shop-prod
   template:
     metadata:
       name: shop-{{env}}
@@ -30,4 +30,4 @@ spec:
           prune: true
           selfHeal: true
         syncOptions:
-        - CreateNamespace=true
+          - CreateNamespace=true
