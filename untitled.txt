@@ -1,0 +1,7 @@
+import oe
+
+ABC = "wartosc_1"
+ABC_DEF = "wartosc_2"
+
+print("ABC")
+print("ABC_DEF")
